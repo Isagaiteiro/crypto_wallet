@@ -1,0 +1,20 @@
+<!--Template para toda a aplicação-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CryptoWallet</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Cabeçalho</h1>
+
+    <%= yield %> <%#%index.html.rb, edit.html.rb, edit.html.erb%>
+
+    <h1>Rodapé</h1>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<h1><%= nome_aplicacao %></h1>
+
+<h2>Seja Bem-Vindo!</h2>
+<p>O idioma usado nessa aplicação é: <strong><%= locale(I18n.locale)%></strong></p>
+
+<!--<p><strong>Data: </strong><%= Date.today.strftime("%d/%m/%y") %></p> //Sem helper-->
+<p><strong>Data: </strong><%= data_br(Date.today) %></p> <!--Data com helper criado-->
+
+<%# <p><%= I18n.t('abc')%></p> <%# Invoca a internacionalização do rails e fala pra ele traduzir a chave abc, ele procura a chave em locales no arquivo yml.%>
+<p><%= t('abc')%></p>
+
+<%= render "menu" %> <!--Renderiza a partial menu-->
+
+<p>Você está no ambiente de <strong><%= ambiente_rails %></strong></p>
+
+<p> Eu sou uma variável de instância/sessão <%= @nome %> </p>
+
+<p> Meu curso é o curso de <%= @curso %> </p>
