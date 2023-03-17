@@ -1,2 +1,6 @@
 pt-BR:
   abc: "Olá mundo"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"

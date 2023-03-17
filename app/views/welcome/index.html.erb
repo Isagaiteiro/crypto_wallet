@@ -4,7 +4,7 @@
 <p>O idioma usado nessa aplicação é: <strong><%= locale(I18n.locale)%></strong></p>
 
 <!--<p><strong>Data: </strong><%= Date.today.strftime("%d/%m/%y") %></p> //Sem helper-->
-<p><strong>Data: </strong><%= data_br(Date.today) %></p> <!--Data com helper criado-->
+<p><strong>Data: </strong><%= l(Date.today) %></p> <!--Data com helper criado-->
 
 <%# <p><%= I18n.t('abc')%></p> <%# Invoca a internacionalização do rails e fala pra ele traduzir a chave abc, ele procura a chave em locales no arquivo yml.%>
 <p><%= t('abc')%></p>
