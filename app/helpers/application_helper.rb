@@ -1,5 +1,5 @@
 module ApplicationHelper
-    def locale(locale)
+    def locale
         I18n.locale == :en ? "Estados Unidos" : "Português do Brasil" #IF utilizando ternário, é muito comum usar ternário quando o só tem duas respostas.
     end
 

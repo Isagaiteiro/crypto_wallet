@@ -1,7 +1,7 @@
 <h1><%= nome_aplicacao %></h1>
 
 <h2>Seja Bem-Vindo!</h2>
-<p>O idioma usado nessa aplicação é: <strong><%= locale(I18n.locale)%></strong></p>
+<p>O idioma usado nessa aplicação é: <strong><%= locale %></strong></p>
 
 <!--<p><strong>Data: </strong><%= Date.today.strftime("%d/%m/%y") %></p> //Sem helper-->
 <p><strong>Data: </strong><%= l(Date.today) %></p> <!--Data com helper criado-->
