@@ -1,13 +1,13 @@
 <h1><%= nome_aplicacao %></h1>
 
 <h2>Seja Bem-Vindo!</h2>
-<p>O idioma usado nessa aplicação é: <strong><%= locale %></strong></p>
+<p>O idioma usado nessa aplicação é: <strong><%= t('actual_locale') %></strong></p>
 
 <!--<p><strong>Data: </strong><%= Date.today.strftime("%d/%m/%y") %></p> //Sem helper-->
 <p><strong>Data: </strong><%= l(Date.today) %></p> <!--Data com helper criado-->
 
 <%# <p><%= I18n.t('abc')%></p> <%# Invoca a internacionalização do rails e fala pra ele traduzir a chave abc, ele procura a chave em locales no arquivo yml.%>
-<p><%= t('abc')%></p>
+<p><%= t('hello')%></p>
 
 <%= render "menu" %> <!--Renderiza a partial menu-->
 
