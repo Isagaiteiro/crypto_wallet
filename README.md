@@ -1,5 +1,5 @@
 
-# crypto_wallet
+# Crypto Wallet
 
 # Tecnologias Utilizadas no Projeto: 
 
