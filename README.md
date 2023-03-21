@@ -27,7 +27,7 @@ Things you may want to cover:
 # Tecnologias Utilizadas no Projeto: 
 
 <div>  
-<img height="50em" align="center" style="padding:15px;"src="https://github.com/devicons/devicon/blob/master/icons/ruby/ruby-plain-wordmark.svg"/>
+<img height="50em" align="center" style="padding:15px;"src="https://github.com/devicons/devicon/blob/master/icons/ruby/ruby-plain.svg"/>
 <img height="50em" align="center" style="padding:15px;"src="https://github.com/devicons/devicon/blob/master/icons/rails/rails-plain.svg"/>
 <img height="50em" align="center" style="padding:15px;"src="https://github.com/devicons/devicon/blob/master/icons/yarn/yarn-original.svg"/>
 <img height="50em" align="center" style="padding:15px;" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original-wordmark.svg"/>
