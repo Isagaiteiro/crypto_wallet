@@ -12,3 +12,10 @@ pt-BR:
     delete: "Apagar"
     new: "Novo"
     back: "Voltar"
+  new:
+    coin: "Nova Moeda"
+    mining_type: "Novo Tipo de Mineração"
+  editing: "Tela de Edição"
+  showing:
+    coin: "Exibindo Moeda"
+    mining_type: "Exibindo Tipo de Mineração"
