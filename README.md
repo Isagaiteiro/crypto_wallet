@@ -1,7 +1,8 @@
 
 # Crypto Wallet
 
-<h3>Esse projeto foi desenvolvido ao decorrer do curso <a href="">Ruby on Rails 5.x - Do início ao fim!</a></h3>
+<h3>Esse projeto foi desenvolvido ao decorrer do curso <a href="https://www.udemy.com/course/rubyonrails-5x/">Ruby on Rails 5.x - Do início ao fim!</a><br>O mesmo se encontra disponível na plataforma de cursos Udemy</h3>
+
 # Tecnologias Utilizadas no Projeto: 
 
 <div>  
