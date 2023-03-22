@@ -1,12 +1,2 @@
-<ul>
-     <!--<li>
-        <a href="/coins">Cadastro de Moedas</a>
-    </li> -->
-    <li>
-        <%= link_to "Moedas", coins_path%>
-    </li>
-    <li>
-        <%= link_to "Tipos de Mineração", mining_types_path%>
-    </li>
-    
-</ul>
+<%= link_to "Moedas", coins_path, class:"btn btn-secondary btn-lg", role:"button"%>
+<%= link_to "Tipos de Mineração", mining_types_path, class:"btn btn-secondary btn-lg", role:"button"%>

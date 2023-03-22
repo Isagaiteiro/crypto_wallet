@@ -1,25 +1,8 @@
-<p>
-    <%= link_to 'Português (BR)', root_path(locale: 'pt-BR')%>
-</p>
-<p>
-    <%= link_to 'English', root_path(locale: 'en')%>
-</p>
+<div class="p-5 mb-4 bg-light rounded-3">
+    <h1 class="display-5 fw-bold">Seja Bem-Vindo!!</h1>
+    <p class="col-md-8 fs-4">Este é o Crypto Wallet, um app para você cadastrar e acompanhar as suas criptomoedas.</p>
+    <hr class-"my-4">
+    <p>Para começar selecione uma das opções abaixo:</p>
+    <%= render "menu" %> <!--Renderiza a partial menu-->
+</div>
 
-<h1><%= nome_aplicacao %></h1>
-
-<h2>Seja Bem-Vindo!</h2>
-<p>O idioma usado nessa aplicação é: <strong><%= t('actual_locale') %></strong></p>
-
-<!--<p><strong>Data: </strong><%= Date.today.strftime("%d/%m/%y") %></p> //Sem helper-->
-<p><strong>Data: </strong><%= l(Date.today) %></p> <!--Data com helper criado-->
-
-<%# <p><%= I18n.t('abc')%></p> <%# Invoca a internacionalização do rails e fala pra ele traduzir a chave abc, ele procura a chave em locales no arquivo yml.%>
-<p><%= t('hello')%></p>
-
-<%= render "menu" %> <!--Renderiza a partial menu-->
-
-<p>Você está no ambiente de <strong><%= ambiente_rails %></strong></p>
-
-<p> Eu sou uma variável de instância/sessão <%= @nome %> </p>
-
-<p> Meu curso é o curso de <%= @curso %> </p>

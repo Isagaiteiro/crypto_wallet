@@ -2,7 +2,7 @@
 
 <h1>Mining Types</h1>
 
-<table class="table">
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= @mining_types.human_attribute_name(:description)%></th>
@@ -26,5 +26,5 @@
 
 <br>
 
-<%= link_to 'Back', welcome_index_path %> |
-<%= link_to 'New Mining Type', new_mining_type_path %>
+<%= link_to 'Back', welcome_index_path, class:"btn btn-secondary btn-sm", role:"button" %>
+<%= link_to 'New Mining Type', new_mining_type_path, class:"btn btn-secondary btn-sm", role:"button" %>
