@@ -11,32 +11,33 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <div class="form-group">
+    <%= form.label :description, class:"form-label" %>
+    <%= form.text_field :description, class:"form-control", placeholder:"Bitcoin" %>
   </div>
 
-  <div class="field">
-    <%= form.label :acronym %>
-    <%= form.text_field :acronym %>
+  <div class="form-group">
+    <%= form.label :acronym, class:"form-label" %>
+    <%= form.text_field :acronym, class:"form-control", placeholder:"BTC" %>
   </div>
 
-  <div class="field">
-    <%= form.label :url_image %>
-    <%= form.text_field :url_image %>
+  <div class="form-group">
+    <%= form.label :url_image, class:"form-label" %>
+    <%= form.text_field :url_image, class:"form-control", placeholder:"http://img.ur/bitcoin.png" %>
     <%#= image_tag coin.url_image, size: "25x25" %>
   </div>
 
-  <div class="field">
-    <%= form.label :mining_type_id %>
+  
+  <div class="col-auto">
+    <%= form.label :mining_type_id, class:"form-label" %>
     
     <%# Realiza um select para o formulário do model Coin, passa o nome do campo que será trabalhado (no caso o id do tipo de mineração que está relacionado na tabela Coin), Pega todos os tipos de mineração e faz um collect (que é a mesma coisa que o map, mais ele é mais usado nessa situação pelo fato de tornar mais aparente o fata de que está coletando os dados dos tipos de mineração passados) e por fim, o include_blanck faz aparecer uma opção em branco caso a pessoa não queira preencher o tipo de moeda %>
     <%# Esse select está contrariando a estrutura MVC, pois, no MVC as Views não podem acessar diretamente os models, dessa forma é necessário reestruturar esse código para que a requisição passe pelo controller antes de acessar o model%>
     <%# form.select("mining_type_id", MiningType.all.collect {|m| [m.description, m.id]}, {include_blank: 'Selecione'})%>
-    <%= form.select("mining_type_id", MiningType.all.pluck(:description, :id), { include_blank: 'Selecione' })%>
+    <%= form.select("mining_type_id", MiningType.all.pluck(:description, :id), { include_blank: 'Selecione' }, class:"form-select")  %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions mt-3">
+    <%= form.submit nil, class:"btn btn-success btn-sm" %>
   </div>
 <% end %>
